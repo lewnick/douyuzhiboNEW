@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4768DB8C21E8789300336BA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4768DB8B21E8789300336BA8 /* AppDelegate.swift */; };
-		4768DB8E21E8789300336BA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4768DB8D21E8789300336BA8 /* ViewController.swift */; };
 		4768DB9121E8789300336BA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4768DB8F21E8789300336BA8 /* Main.storyboard */; };
 		4768DB9321E8789600336BA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4768DB9221E8789600336BA8 /* Assets.xcassets */; };
 		4768DB9621E8789600336BA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4768DB9421E8789600336BA8 /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		4768DB8821E8789300336BA8 /* DYZBNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZBNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4768DB8B21E8789300336BA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4768DB8D21E8789300336BA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4768DB9021E8789300336BA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4768DB9221E8789600336BA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4768DB9521E8789600336BA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +52,69 @@
 		4768DB8A21E8789300336BA8 /* DYZBNew */ = {
 			isa = PBXGroup;
 			children = (
+				4768DB9D21E8DFEB00336BA8 /* Classes */,
 				4768DB8B21E8789300336BA8 /* AppDelegate.swift */,
-				4768DB8D21E8789300336BA8 /* ViewController.swift */,
 				4768DB8F21E8789300336BA8 /* Main.storyboard */,
 				4768DB9221E8789600336BA8 /* Assets.xcassets */,
 				4768DB9421E8789600336BA8 /* LaunchScreen.storyboard */,
 				4768DB9721E8789600336BA8 /* Info.plist */,
 			);
 			path = DYZBNew;
+			sourceTree = "<group>";
+		};
+		4768DB9D21E8DFEB00336BA8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4768DBA321E8DFEB00336BA8 /* Main */,
+				4768DB9E21E8DFEB00336BA8 /* Home */,
+				4768DBA021E8DFEB00336BA8 /* Follow */,
+				4768DBA221E8DFEB00336BA8 /* Live */,
+				4768DB9F21E8DFEB00336BA8 /* Tools */,
+				4768DBA121E8DFEB00336BA8 /* Profile */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4768DB9E21E8DFEB00336BA8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4768DB9F21E8DFEB00336BA8 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		4768DBA021E8DFEB00336BA8 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		4768DBA121E8DFEB00336BA8 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		4768DBA221E8DFEB00336BA8 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		4768DBA321E8DFEB00336BA8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +188,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4768DB8E21E8789300336BA8 /* ViewController.swift in Sources */,
 				4768DB8C21E8789300336BA8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,9 +334,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YMD3JCX37P;
 				INFOPLIST_FILE = DYZBNew/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,7 +346,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cn.imosaic.DYZBNew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -300,9 +354,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YMD3JCX37P;
 				INFOPLIST_FILE = DYZBNew/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +366,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cn.imosaic.DYZBNew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
